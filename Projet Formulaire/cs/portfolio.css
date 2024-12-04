@@ -1,0 +1,219 @@
+/* Style global pour réinitialiser les marges et les paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container central pour centrer les éléments */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* En-tête de la page */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center; /* Centre le titre principal */
+    font-size: 36px; /* Taille pour un impact visuel */
+    margin-bottom: 10px; /* Ajoute un espace sous le titre */
+}
+
+header p {
+    text-align: center; /* Centre le sous-titre */
+    font-size: 18px; /* Ajuste la taille pour le sous-titre */
+    margin-top: 10px;
+}
+
+/* Navigation des onglets */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.tab-button {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.tab-button:hover {
+    background-color: #555;
+}
+
+.tab-button.active {
+    background-color: #222;
+}
+
+/* Style des sections */
+.tab-section {
+    display: none;
+}
+
+.tab-section.active {
+    display: block;
+}
+
+/* Section À propos de moi */
+#about {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+#about h2 {
+    text-align: center; /* Centre uniquement le titre "À propos de moi" */
+    font-size: 28px; /* Ajuste la taille pour une meilleure visibilité */
+    margin-bottom: 20px; /* Ajoute un espace sous le titre */
+}
+
+#about .container {
+    display: flex; /* Place la photo et le texte côte à côte */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    gap: 20px; /* Ajoute un espace entre la photo et le texte */
+    text-align: left; /* Maintient un alignement à gauche pour tout */
+}
+
+#about .profil-photo {
+    max-width: 150px;        /* Largeur maximale de l'image */
+    height: auto;           /* Maintient les proportions */
+    border-radius: 10px;    /* Coins arrondis */
+    object-fit: cover;      /* S'assure que l'image couvre tout sans déformation */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin: 0; /* Supprime tout centrage de l'image */
+}
+
+#about .container div {
+    flex: 1; /* Permet au texte de s'étendre sur l'espace disponible */
+    text-align: left; /* Le texte descriptif reste aligné à gauche */
+}
+
+/* Texte description */
+.about-description {
+    margin-top: 20px;
+    text-align: justify; /* Justifie le texte pour une apparence professionnelle */;
+}
+
+/* Compétences */
+.skills {
+    margin-top: 20px;
+    text-align: left; /* Garde les compétences alignées à gauche */
+}
+
+.skills ul {
+    list-style-type: square;
+    padding-left: 20px; /* Ajoute une marge pour le retrait */
+}
+
+/* Section des projets */
+#projects {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.project-card h3 {
+    color: #333;
+    font-size: 20px;
+}
+
+.project-card p {
+    color: #555;
+}
+
+/* Section Contact */
+#contact {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: left;
+}
+
+/* Formulaire de contact */
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#form-feedback {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Responsive Design pour les petits écrans */
+@media (max-width: 768px) {
+    #about .container {
+        flex-direction: column; /* Empile la photo et le texte en colonne */
+        align-items: center; /* Centre le contenu */
+    }
+
+    .profil-photo {
+        margin-bottom: 20px; /* Ajoute un espace sous la photo */
+    }
+
+    .container {
+        width: 100%; /* Ajuste la largeur du container à 100% */
+    }
+
+    /* Section des projets et contact : ajout d'espace et centrage pour les petits écrans */
+    .project-card {
+        margin: 20px 0;
+    }
+}
+
+
+
