@@ -27,8 +27,6 @@ if (isset($_SESSION['user_login'])) {
 }
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>

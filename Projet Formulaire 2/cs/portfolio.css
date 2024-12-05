@@ -253,9 +253,9 @@ button:hover {
 .dropdown-menu a:hover {
     text-decoration: underline;
 }
-.user-menu:hover .dropdown-menu {
+/* .user-menu:hover .dropdown-menu {
     display: block;
-}
+} */
 
 
 
